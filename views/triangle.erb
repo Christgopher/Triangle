@@ -1,0 +1,8 @@
+<h1>What kind of triangle is it?</h1>
+
+<% if @triangle.triangle?() %>
+  <h5> <%= @triangle.triangle_type() %> </h5>
+
+<% else %>
+  <h5> Not a triangle</h5>
+<% end %>
