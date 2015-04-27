@@ -23,5 +23,9 @@ describe(Triangle) do
       test_triangle = Triangle.new(2, 2, 1)
       expect(test_triangle.triangle_type()).to(eq("Isosceles"))
     end
+    it("returns if scalene") do
+      test_triangle = Triangle.new(2, 3, 4)
+      expect(test_triangle.triangle_type()).to(eq("Scalene"))
+    end
   end
 end
