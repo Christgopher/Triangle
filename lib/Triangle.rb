@@ -13,7 +13,13 @@ class Triangle
     if @triangle_array.at(2).<(side_sum)
       true
     else
-    "Not a triangle"
+      false
     end
   end
+
+  define_method(:triangle_type) do
+      if @side1.==(@side2) && @side2.==(@side3)
+        "Equilateral"
+      end
+    end
 end
